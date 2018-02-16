@@ -92,7 +92,7 @@ def hello():
     return """<!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Markov chain by Krishna</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -106,7 +106,9 @@ def hello():
     <footer>Based on 2states</footer>
   </blockquote>
 </div>
-
+<div class="footer">
+  <p>Footer</p>
+</div>
 </body>
     """.format(story=mc.generate(start, 500))
 
