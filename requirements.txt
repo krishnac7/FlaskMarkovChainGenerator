@@ -1,3 +1,2 @@
 Flask==0.12.2
-collections==8.3
 numpy==1.14.0
