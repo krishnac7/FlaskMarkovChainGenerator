@@ -89,10 +89,10 @@ def hello():
     # Get some text to start with
     start = in_text[pos:pos+order]
 
-    return """
-    <head><meta name="viewport" content="width=device-width, initial-scale=1.0"></head>
+    return """<html>
+    <head><meta name="viewport" content="width=device-width, initial-scale=1.0"></head><body>
     <h1></h1>
-    <p>{story}</p>
+    <p1>{story}</p1></body></html>
     """.format(story=mc.generate(start, 500))
 
 if __name__ == "__main__":
