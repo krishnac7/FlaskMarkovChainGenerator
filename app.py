@@ -67,8 +67,8 @@ order = 15
 
 in_text = ''
 
-sherlock = open('2states.txt')
-in_text += sherlock.read()
+resp = open('2states.txt')
+in_text += resp.read()
 
 mc = MarkovChain(order=order)
 mc.train(in_text)
@@ -89,7 +89,11 @@ def hello():
     # Get some text to start with
     start = in_text[pos:pos+order]
 
-    return mc.generate(start, 1000)
+    return """
+    <head><meta name="viewport" content="width=device-width, initial-scale=1.0"></head>
+    <h1></h1>
+    <p>{story}</p>
+    """.format(story=mc.generate(start, 500))
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
