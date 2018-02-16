@@ -1,0 +1,3 @@
+Flask==0.7.2
+collections==8.3
+numpy==1.14.0
