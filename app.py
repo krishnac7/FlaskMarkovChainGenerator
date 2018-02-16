@@ -105,6 +105,7 @@ def hello():
     <p>{story}</p>
     <footer>Based on 2states</footer>
   </blockquote>
+  <input type="button" value="Refresh Page" onClick="window.location.reload()">
 </div>
 <div class="footer">
   <p>Footer</p>
