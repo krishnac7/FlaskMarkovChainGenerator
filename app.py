@@ -105,8 +105,8 @@ def hello():
     <p>{story}</p>
     <footer>Based on 2states</footer>
   </blockquote>
-  <input class ='btn btn-primary' type="button" value="New Narrative" onClick="window.location.reload()">
-</div>
+  <center><input class ='btn btn-primary' type="button" value="New Narrative" onClick="window.location.reload()">
+</center></div>
 </body>
     """.format(story=mc.generate(start, 500))
 
