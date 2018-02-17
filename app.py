@@ -79,8 +79,6 @@ pos = randint(0, len(in_text) - order + 1)
 # Get some text to start with
 start = in_text[pos:pos+order]
 
-print(mc.generate(start, 1000))
-
 @app.route("/")
 def hello():
     # Get a random part of the text to start reading from
@@ -92,7 +90,7 @@ def hello():
     return """<!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Markov chain by Krishna</title>
+  <title>Markov chain</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
